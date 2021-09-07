@@ -13,7 +13,7 @@
  - Click on **Params** tab. 
  - Enter path variable: *username:*
  -  Click **Send**.
- - Verify that the response includes the following information:
+ - Verify that the response returns a *200 OK* status with appropriate data.
 
 
 ## E2 Retrieve information about a repository
@@ -26,7 +26,7 @@
  	 - username:
 	 - reponame:
  - Click **Send**
- - Verify that the response includes the following information:
+ - Verify that the response returns a *200 OK* status with appropriate data.
 
 ## E3 Retrieve repositories for a user where user is an owner
 
@@ -40,7 +40,7 @@
  - Enter the following query variable:
 	 - 	 *type*:*owner*
  - Click **Send**
- - Verify that the response includes the following information:
+ - Verify that the response returns a *200 OK* status with appropriate data.
 
 ## E4 Create a repository
 
@@ -61,5 +61,5 @@
 }
 ```
  - Click **Send**
- - Verify that the response includes the following information: 
+ - Verify that the response returns a *201 Created* status with appropriate data.
  - Go to your Github page and verify that the test-repo is created and is private.
