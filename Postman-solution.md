@@ -11,7 +11,7 @@
  - Enter any request name (like **Retrieve User Profile**).
  - Enter URL as https://api.github.com/users/:username
  - Click on **Params** tab. 
- - Enter path variable: *username:*
+ - Enter path variable with **key**=*username*, **value**=*spring-projects*
  -  Click **Send**.
  - Verify that the response returns a *200 OK* status with appropriate data.
 
@@ -23,8 +23,8 @@
  - Enter URL as https://api.github.com/repos/:username/:reponame .
  - Click on **Params** tab. 
  - Enter the following path variables:
- 	 - username:
-	 - reponame:
+ 	 - **key**=*username*, **value**=*spring-projects*
+	 - **key**=*reponame*, **value**=*spring-framework*
  - Click **Send**
  - Verify that the response returns a *200 OK* status with appropriate data.
 
@@ -35,10 +35,10 @@
  - Enter URL as https://api.github.com/users/:username/repos.
  - Click on **Params** tab. 
  - Enter the following path variables:
-	 - username:
-	 - reponame:
+ 	 - **key**=*username*, **value**=*spring-projects*
+	 - **key**=*reponame*, **value**=*spring-framework*
  - Enter the following query variable:
-	 - 	 *type*:*owner*
+	 - **key**=*type*, **value**=*owner*
  - Click **Send**
  - Verify that the response returns a *200 OK* status with appropriate data.
 
