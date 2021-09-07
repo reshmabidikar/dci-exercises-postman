@@ -9,15 +9,15 @@ The following are some general instructions to work on these exercises.
 
 
 ## E1 Retrieve User Profile
-Execute the [Get a user](https://docs.github.com/en/rest/reference/users#get-a-user) API method for username - 
+Execute the [Get a user](https://docs.github.com/en/rest/reference/users#get-a-user) API method for the username *spring-projects*.
 
 ## E2 Retrieve information about a repository
 
-Execute the [Get a Repository](https://docs.github.com/en/rest/reference/repos#get-a-repository) API method for 
+Execute the [Get a Repository](https://docs.github.com/en/rest/reference/repos#get-a-repository) API method for username *spring-projects* and repository *spring-framework*.
 
 ## E3 Retrieve repositories for a user where user is an owner
 
-Execute the  [List Repositories for User](https://docs.github.com/en/rest/reference/repos#list-repositories-for-a-user) API method for user
+Execute the  [List Repositories for User](https://docs.github.com/en/rest/reference/repos#list-repositories-for-a-user) API method for username *spring-projects*.
 
 
 ## E4 Create a repository
