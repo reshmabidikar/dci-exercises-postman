@@ -48,6 +48,7 @@
  - Right click on your collection and click on **Add Request**.
  - Enter any request name (like **Create Repository**).
  - Enter URL as https://api.github.com/user/repos.
+ - Select request method as **POST**
  - Click on **Authorization** tab.
  - Select **Type** as *Basic Auth*.
  - Enter your Github user id as the **username** and the token obtained in step 1 as the **password**.
@@ -62,4 +63,26 @@
 ```
  - Click **Send**
  - Verify that the response returns a *201 Created* status with appropriate data.
- - Go to your Github page and verify that the test-repo is created and is private.
+ - Go to your Github page and verify that the *test-repo* is created and is *private*.
+
+## E5 Update a repository
+
+ - Enter any request name (like **Create Repository**).
+ - Enter URL as https://api.github.com/user/repos.
+ - Select request method as **PATCH**
+ - Click on **Authorization** tab.
+ - Select **Type** as *Basic Auth*.
+ - Enter your Github user id as the **username** and the token obtained in E4 Step 1 as the **password**.
+ - Click on **Body** tab.
+ - Click the **raw** radio button and select **JSON** in the drop down.
+ - Enter the following body:
+```
+{
+ "name": "test-repo2",
+ "private": false,
+ "has_issues":false
+}
+```
+ - Click **Send**
+ - Verify that the response returns a *201 OK* status with appropriate data.
+ - Go to your Github page and verify that the *test-repo* is no longer present. Instead, a repository called *test-repo2* should be created that is *public* and has *issues* disabled.
