@@ -34,9 +34,11 @@
  3. Enter URL as https://api.github.com/users/:username/repos.
  4. Click on **Params** tab. 
  5. Enter the following path variables:
+ 
  	 a. **key**=*username*, **value**=*spring-projects*
-	 b. **key**=*reponame*, **value**=*spring-framework*
+
  6.  Enter the following query variable:
+ 
 	 a.  **key**=*type*, **value**=*owner*
  7. Click **Send**.
  8. Verify that the response returns a *200 OK* status with appropriate data.
